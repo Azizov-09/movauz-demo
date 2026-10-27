@@ -140,7 +140,7 @@ function HeroSection() {
         <div
           className="absolute top-0 left-0 right-0 h-[70vh]"
           style={{
-            background: 'radial-gradient(ellipse 100% 60% at 50% -5%, rgba(199, 255, 97, 0.07) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 100% 60% at 50% -5%, rgba(201, 169, 110, 0.09) 0%, transparent 70%)',
           }}
         />
         <div
@@ -766,7 +766,7 @@ function FinalCTASection() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(199, 255, 97, 0.05) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(201, 169, 110, 0.06) 0%, transparent 70%)',
         }}
         aria-hidden="true"
       />

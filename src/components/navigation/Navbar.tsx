@@ -16,6 +16,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { MovaLogo } from '@/components/ui/MovaLogo';
 
 const navLinks = [
   { href: '/explore', label: 'Explore', icon: Compass },
@@ -112,23 +113,11 @@ export function Navbar() {
             aria-label="MOVA — Home"
           >
             <motion.div
-              className="relative w-8 h-8 rounded-lg bg-[var(--accent-primary)] flex items-center justify-center"
-              whileHover={{ scale: 1.05, rotate: -3 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <span
-                className="font-display font-black text-sm leading-none"
-                style={{ color: '#0B0D12', fontFamily: 'var(--font-display)' }}
-              >
-                M
-              </span>
+              <MovaLogo size={32} showWordmark={true} />
             </motion.div>
-            <span
-              className="text-xl font-black tracking-tight hidden sm:block"
-              style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)' }}
-            >
-              MOVA
-            </span>
           </Link>
 
           {/* Desktop Nav Links */}
@@ -285,9 +274,7 @@ export function Navbar() {
             >
               {/* Mobile Header */}
               <div className="flex items-center justify-between p-5 border-b border-[var(--border-subtle)]">
-                <span className="text-h3" style={{ fontFamily: 'var(--font-display)', fontWeight: 700 }}>
-                  Menu
-                </span>
+                <MovaLogo size={28} showWordmark={true} />
                 <button
                   onClick={() => setIsMobileOpen(false)}
                   className="btn btn-ghost p-2"
